@@ -38,7 +38,7 @@ This project consists of a collection of interactive sensor-based visualizers de
 - **Data Processing**: NumPy (for numerical computations)
 
 ## Documentation
- https://docs.google.com/document/d/1_3aOXfcF3SWF6_m7hnmZ2VtqVYfztu8QkoeiiyES2nA/edit?usp=sharing
+ [Documentation](https://docs.google.com/document/d/1_3aOXfcF3SWF6_m7hnmZ2VtqVYfztu8QkoeiiyES2nA/edit?usp=sharing)
 
 ## Installation
 
