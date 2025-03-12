@@ -20,9 +20,8 @@ This project consists of a collection of interactive sensor-based visualizers de
 - [Usage](#usage)
 - [Videos](#videos)
 - [Game Descriptions](#game-descriptions)
-- [MLC & BLE Configurations](#mlc--ble-configurations)
-  - [Decision Tree Model MLC Configuration Files](#decision-tree-model-mlc-configuration-files)
-  - [App Configuration Files](#app-configuration-files)
+- [Decision Tree Model MLC Configuration Files](#decision-tree-model-mlc-configuration-files)
+- [App Configuration Files](#app-configuration-files)
 
 ## Features
 
