@@ -81,7 +81,7 @@ This project consists of a collection of interactive sensor-based visualizers de
    npm install
    ```
 ## Poster
-[Poster Link](https://docs.google.com/presentation/d/1uJJx2W1rVMsM-QbbHA7qqo_VBvEp6b4P/edit?usp=sharing&ouid=115768353253623916536&rtpof=true&sd=true)
+[Poster Link](https://docs.google.com/presentation/d/1QCpSiHZgukI_dEbPChZpWSlbRlAN4g-A/edit?usp=sharing&ouid=104706167263291189947&rtpof=true&sd=true)
 
 
 ## Dataset
