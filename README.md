@@ -40,6 +40,7 @@ This project consists of a collection of interactive sensor-based visualizers de
 
 ## Documentation
  [Documentation](https://docs.google.com/document/d/1_3aOXfcF3SWF6_m7hnmZ2VtqVYfztu8QkoeiiyES2nA/edit?usp=sharing)
+ 
  [Documentation in PDF Format](https://drive.google.com/file/d/1G0scxTKr364dTLCZbykRRmJVuXC4UFcF/view)
 
 ## Installation
