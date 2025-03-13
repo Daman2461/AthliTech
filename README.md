@@ -11,6 +11,7 @@ This project consists of a collection of interactive sensor-based visualizers de
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Documentation](#documentation)
+- [Poster](#poster)
 - [Installation](#installation)
   - [Prerequisites](#prerequisites)
   - [Backend Setup](#backend-setup)
@@ -39,6 +40,7 @@ This project consists of a collection of interactive sensor-based visualizers de
 
 ## Documentation
  [Documentation](https://docs.google.com/document/d/1_3aOXfcF3SWF6_m7hnmZ2VtqVYfztu8QkoeiiyES2nA/edit?usp=sharing)
+ [Documentation in PDF Format](https://drive.google.com/file/d/1G0scxTKr364dTLCZbykRRmJVuXC4UFcF/view)
 
 ## Installation
 
@@ -77,6 +79,10 @@ This project consists of a collection of interactive sensor-based visualizers de
    ```bash
    npm install
    ```
+## Poster
+[Poster Link](https://docs.google.com/presentation/d/1uJJx2W1rVMsM-QbbHA7qqo_VBvEp6b4P/edit?usp=sharing&ouid=115768353253623916536&rtpof=true&sd=true)
+
+
 ## Dataset
 [Dataset Link](https://drive.google.com/drive/folders/1EbXt3ofgRYc1gK2JeSINofctKB1eFOX6?usp=sharing)
 
@@ -143,7 +149,7 @@ The app configuration file is generated in the BLE sensor app after changing the
 They are required to flash the app inside the Ssensortile Box so that it can run locally.
 
 Link:
-[APP FILES ](https://drive.google.com/drive/folders/1ifW7kHJNRtXa6Z1mGRVws9v32Ss82mlK?usp=sharing)
+[APP FILES](https://drive.google.com/drive/folders/1ifW7kHJNRtXa6Z1mGRVws9v32Ss82mlK?usp=sharing)
 
  
 Configuration file generated after changing the firmware to Entry/Expert 1.21, containing updated settings for the MLC.
