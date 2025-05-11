@@ -6,22 +6,20 @@ from flask import Flask, jsonify, send_from_directory
 from bleak import BleakScanner, BleakClient
 from flask_cors import CORS  # Enables cross-origin requests
 
-# 🔹 Flask App Setup
+ 
 app = Flask(__name__, static_folder="static")
 CORS(app)  # Allows frontend apps to fetch data
 
-# 🔹 SensorTile Box Pro BLE Configuration
+ 
 SENSOR_NAME = "Daman24"
 
-# 🔹 UUIDs
+#  UUIDs
 # MLC_UUID = "0000001b-0002-11e1-ac36-0002a5d5c51b"   
 # FUSION_UUID = "0000000f-0002-11e1-ac36-0002a5d5c51b" 
 FUSION_UUID="00c00000-0001-11e1-ac36-0002a5d5c51b"
 MLC_UUID="0000000f-0002-11e1-ac36-0002a5d5c51b"
 
-# 🔹 Global variable to store latest sensor & MLC data
-
-# 🔹 Global variable to store latest sensor & MLC data
+ 
 sensor_data = {
     "timestamp": None,
     "accel": {"x": 0, "y": 0, "z": 0},
@@ -106,14 +104,14 @@ def run_ble():
     asyncio.set_event_loop(loop)
     loop.run_until_complete(ble_task())
 
-# 🔹 Flask Route to Fetch Sensor Data (Accel + Gyro + MLC)
+#  Flask Route to Fetch Sensor Data (Accel + Gyro + MLC)
 @app.route("/sensor-data", methods=["GET"])
 def get_sensor_data():
     return jsonify(sensor_data)
 
 
 
-# 🔹 Serve `index.html` (Home Page)
+#  Serve `index.html` (Home Page)
 
 @app.route("/")
 def serve_home():
@@ -142,12 +140,12 @@ def serve_community():
 
  
 
-# 🔹 Serve `bicep_curls.html` (Bicep Curl Game Page)
+#  Serve `bicep_curls.html` (Bicep Curl Game Page)
 @app.route("/bicep-curls")
 def serve_bicep_curls():
     return send_from_directory("static", "bicep_curls.html")
 
-# 🔹 Serve `bicep_game.js` (Bicep Curl Game Script)
+#  Serve `bicep_game.js` (Bicep Curl Game Script)
 @app.route("/bicep_game.js")
 def serve_bicep_sensor_game():
     return send_from_directory("static", "bicep_game.js")
@@ -156,7 +154,7 @@ def serve_bicep_sensor_game():
 def serve_shoulder():
     return send_from_directory("static", "shoulder_press.html")
 
-# 🔹 Serve `bicep_game.js` (Bicep Curl Game Script)
+#  Serve `bicep_game.js` (Bicep Curl Game Script)
 @app.route("/shoulder_game.js")
 def serve_shoulder_sensor_game():
     return send_from_directory("static", "shoulder_game.js")
@@ -165,7 +163,7 @@ def serve_shoulder_sensor_game():
 def serve_plank():
     return send_from_directory("static", "plank.html")
 
-# 🔹 Serve `plank_game.js` (Plank Game Script)
+#  Serve `plank_game.js` (Plank Game Script)
 @app.route("/plank_game.js")
 def serve_plank_sensor_game():
     return send_from_directory("static", "plank_game.js")
@@ -175,7 +173,7 @@ def serve_hammer_curls():
     return send_from_directory("static", "hammer_curl.html")
 
 
-# 🔹 Serve `hammer_game.js` (Hammer Curl Game Script)
+#  Serve `hammer_game.js` (Hammer Curl Game Script)
 @app.route("/hammer_game.js")
 def serve_hammer_sensor_game():
     return send_from_directory("static", "hammer_game.js")
@@ -184,7 +182,7 @@ def serve_hammer_sensor_game():
 def serve_pushup():
     return send_from_directory("static", "pushup.html")
 
-# 🔹 Serve `pushup_game.js` (Pushup Game Script)
+#  Serve `pushup_game.js` (Pushup Game Script)
 @app.route("/pushup_game.js")
 def serve_pushup_sensor_game():
     return send_from_directory("static", "pushup_game.js")
@@ -193,7 +191,7 @@ def serve_pushup_sensor_game():
 def serve_tricep_curls():
     return send_from_directory("static", "tricep_overhead.html")
 
-# 🔹 Serve `tricep_overhead_game.js` (triceip overhead extension Game Script)
+#  Serve `tricep_overhead_game.js` (triceip overhead extension Game Script)
 @app.route("/tricep_overhead_game.js")
 def serve_tricep_sensor_game():
     return send_from_directory("static", "tricep_overhead_game.js")
@@ -204,7 +202,7 @@ def serve_tricep_sensor_game():
 def serve_squat():
     return send_from_directory("static", "squat.html")
 
-# 🔹 Serve `tricep_overhead_game.js` (triceip overhead extension Game Script)
+#  Serve `tricep_overhead_game.js` (triceip overhead extension Game Script)
 @app.route("/squat_game.js")
 def serve_squat_sensor_game():
     return send_from_directory("static", "squat_game.js")
